@@ -4,6 +4,10 @@
 
 [PhalconPHP Tutorial](https://olddocs.phalconphp.com/en/latest/reference/tutorial.html)  
 
+(Tutorial - basic)[https://docs.phalconphp.com/zh/3.3/tutorial-base]
+
+(Youtube : Phalcon Framework - Tutorial: Basic)[https://www.youtube.com/watch?v=75W-emM4wNQ]
+
 ## PhalconPHP Install on ArchLinux
 Download AUR repository [php-phalcon](https://aur.archlinux.org/packages/php-phalcon/) 
 and [phalcon-devtools](https://aur.archlinux.org/packages/phalcon-devtools/)  
