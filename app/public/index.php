@@ -5,6 +5,7 @@ use Phalcon\Mvc\View;
 use Phalcon\Mvc\Application;
 use Phalcon\Di\FactoryDefault;
 use Phalcon\Mvc\Url as UrlProvider;
+use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
 
 // Define some absolute path constants to aid in locating resources
 define('BASE_PATH', dirname(__DIR__));
@@ -44,6 +45,23 @@ $di->set(
         return $url;
     }
 );
+
+// Setup the database service
+$di->set(
+    'db',
+    function () {
+        return new DbAdapter(
+            [
+                'host'     => 'localhost',
+                'username' => 'root',
+                'password' => 'password',
+                'dbname'   => 'database_name',
+            ]
+        );
+    }
+);
+
+
 
 $application = new Application($di);
 
